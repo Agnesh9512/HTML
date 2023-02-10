@@ -1,0 +1,88 @@
+.body
+	{
+		background-color: dimgray;
+		color: white;
+	}
+	.header
+	{
+		text-align: center;
+	}
+	.header h1
+	{
+		font-family: verdana;
+	}
+	.header p
+	{
+		font-family: serif;
+		color: black;
+	}
+	.navbar
+	{
+		display: block;
+		background-color: darkgray;
+		color: red;
+		padding: 10px 20px;
+	}
+	.navbar a
+	{
+		text-align: left;
+		text-decoration: none;
+		padding: 5px 10px;
+	}
+	.navbar a:hover
+	{
+		color: black;
+		background-color: wheat;
+	}
+	{
+		text-align: center;
+		font-family: sans-serif;
+	}
+	.partition
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		
+	}
+	
+	.p1
+	{	
+		background-image: url('blur light.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		flex: 30%;
+		background-color: lightsalmon;
+		padding: 10px;
+		border: 5px solid white;
+		
+	}
+	.p3
+	{	
+		flex: 35%;
+		background-color: lightsalmon;
+		padding: 10px;
+		border: 5px solid white;
+		
+	}
+	.p2
+	{
+		flex: 70%;
+		background-color: lightgrey;
+		padding: 10px;
+		color: black;
+		border: 5px solid white;
+	}
+	.p4
+	{
+		flex: 65%;
+		background-color: lightgrey;
+		padding: 10px;
+		color: black;
+		border: 5px solid white;
+	}
+	.img
+	{
+		padding: 0px 0px 10px 0px;
+	 	width: 200px;
+ 	  	box-shadow: 0 4px 8px 0 black;
+	}

@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body bgcolor="lightgray">
-		<form>
-			<fieldset>
+		<form action="/home/dell4/HTML/Thank_you.html" target="_blank">
+			<!--<fieldset>
 			<label for="fname">First Name :</label>
 			<input type="text" name="fname" id="fname" size="20" required>
 			<br><br>
@@ -20,15 +20,29 @@
 			<br><br>
 			<label for="pass">Password :</label>
 			<input type="text" name="pass" id="pass" size="6" pattern="[0-9]" required>
-			<input type="button" value="submit" title="Submit">
+			<input type="hidden" name="yourid" id="yourid" value="25435">
+			<input type="submit" value="submit" title="Submit">
 			<br><br>
+		</fieldset>-->
+			<fieldset>
 			<label for="Cars">Cars</label>
+			<label for="Bikes" style="padding-left: 60px;">Bikes</label>
 			<br>
-			<select id="Cars" name="Cars">
+			<select id="Cars" name="Cars" multiple>
 				<option>Tata</option>
 				<option>Mahindra</option>
-				<option>Kia</option>
+				<option>Ford</option>
+				<option>Ranault</option>
+				<option>Hundai</option>
+				<option>Audi</option>
 			</select>
+			<select id="Bikes" name="Bikes" >
+				<option>Honda</option>
+				<option>Yamaha</option>
+				<option>Hero</option>
+			</select>
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
 		</fieldset>
 		<fieldset>
 			<p>Choose your favourite Language</p>
@@ -39,19 +53,17 @@
 			<label for="CSS">CSS</label><br>
 			<input type="radio" name="favlang" id="JavaScript" value="JavaScript">
 			<label for="JavaScript">JavaScript</label><br><br>
-			<input type="button" name="Submit"  value="Submit">
+			<input type="button" name="submit" id="Submit" value="Submit">
 		</fieldset>
 		<fieldset>
 			<p>Selete your favourite Fruit</p>
-			<input list="Fruits">
+			<input list="Fruits" placeholder="Fruits">
 			<datalist id="Fruits">
 				<option value="Apple"></option>
 				<option value="Mango"></option>
 				<option value="Orange"></option>
-				<label for="Submit">Submit</label>
-				<input type="button" name="Submit" value="Submit">
 			</datalist>
-				<input type="button" name="Submit" value="Submit">
+				<input type="submit" name="submit">
 		</fieldset>
 		<fieldset>
 			<p>Choose your favourite Players</p>
@@ -61,26 +73,83 @@
 			<label for="Rohit">Rohit</label><br>
 			<input type="checkbox" name="favplayer" id="Dhoni" value="Dhoni">
 			<label for="Dhoni">Dhoni</label><br><br>
-			<input type="button" name="Submit" id="Submit" value="Submit">
+			<input type="submit" name="submit" id="Submit">
+			<input type="reset" name="reset" value="Reset">
 		</fieldset>
 		<fieldset>
 			<p>Press the Button</p>
 			<input type="image" src="/home/dell4/HTML/img_submit.gif" width="50" height="50" onclick="alert('Submitted')" name="submitted" id="submitted" alt="Submit">
 		</fieldset>
 		<fieldset>
+			<label for="myfile" id="myfile" > Select a File :</label>
+			<input type="File" name="myfile" id="myfile">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Click here to know more about India</p>
+			<label for="time">Your arrival time : </label>
+			
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Enter Time when you Arrived</p>
+			<label for="time">Your arrival time : </label>
+			<input type="time" name="time" id="time">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
+			<label for="week">Select week when you are not available :</label>
+			<input type="week" name="wek" id="week">
+			<input type="submit">
+		</fieldset>
+		<fieldset>
+			<p>Enter your Birthday Time</p>
+			<label for="dob">Birthday Time : </label>
+			<input type="date" name="dob" id="dob" min="2000-01-01" max="2023-01-01">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
 			<p>Enter your date of Birth</p>
 			<label for="dob">DOB : </label>
-			<input type="date" name="dob" id="dob" min="2000-01-01" max="2023-01-01">
+			<input type="datetime-local" name="dob" id="dob">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Enter your Birthday Month</p>
+			<label for="month">Birthday Month : </label>
+			<input type="Month" name="month" id="month">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
 		</fieldset>
 		<fieldset>
 			<p>Example of quantity in numbers</p>
 			<label for="quantity">Quantity between 1 to 10</label>
-			<input type="number" name="quantity" id="quantity" min="1" max="10">
+			<input type="number" name="quantity" id="quantity" min="1" max="10" placeholder="0">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
 		</fieldset>
 		<fieldset>
+			<p>Select the number of cloths you have</p>
+			<label for="range">Quantity between 1 to 25</label>
+			<input type="range" name="range" id="range" min="1" max="25">
+			<br><br>
+			<input type="submit" name="submit" id="Submit">
+		</fieldset>
+		<fieldset>
+				<label for="favcolor" id="favcolor" >Select Your Fav Color : </label>
+					<input type="color" name="color" id="favcolor" value="#A9ACB1"><br><br>
+					<input type="submit" name="submit" id="Submit">
+			</fieldset>
+		<fieldset>
 			<p>Example of iframe tag</p><br>
-			<div align="center"><iframe width="420" height="345" src="https://www.youtube.com/embed/1uBBT1mdaZE" style="text-align: center;">
-</iframe>
+
+			<div align="center">
+				<iframe width="420" height="345" src="https://www.youtube.com/embed/1uBBT1mdaZE" style="text-align: center;"></iframe>
 			</div>
 		</fieldset>
 		</form>
