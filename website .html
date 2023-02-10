@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Workshop</title>
+</head>
+<style>
+	.body
+	{
+		background-color: dimgray;
+		color: white;
+	}
+	.header
+	{
+		text-align: center;
+	}
+	.header h1
+	{
+		font-family: verdana;
+	}
+	.header p
+	{
+		font-family: serif;
+		color: black;
+	}
+	.navbar
+	{
+		display: block;
+		background-color: darkgray;
+		color: red;
+		padding: 10px 20px;
+	}
+	.navbar a
+	{
+		text-align: left;
+		text-decoration: none;
+		padding: 5px 10px;
+	}
+	.navbar a:hover
+	{
+		color: black;
+		background-color: wheat;
+	}
+	{
+		text-align: center;
+		font-family: sans-serif;
+	}
+	.partition
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		padding: auto;
+	}
+	
+	.p1
+	{	
+		background-image: url('background.jpeg');
+		background-repeat: no-repeat;
+		flex: 30%;
+		background-color: lightsalmon;
+		padding: 10px;
+		border: 5px solid white;
+		
+	}
+	.p3
+	{	
+		flex: 30%;
+		background-color: lightsalmon;
+		padding: 10px;
+		border: 5px solid white;
+		
+	}
+	.p2
+	{
+		flex: 70%;
+		background-color: lightgrey;
+		padding: 10px;
+		color: black;
+		border: 5px solid white;
+	}
+	.p4
+	{
+		flex: 70%;
+		background-color: lightgrey;
+		padding: 10px;
+		color: black;
+		border: 5px solid white;
+	}
+	.img
+	{
+		padding: 0px 0px 10px 0px;
+	 	width: 200px;
+ 	  	box-shadow: 0 4px 8px 0 black;
+	}
+	.img a
+	{
+		
+	}
+	/*.button
+	{
+		cursor: pointer;
+		background-color: black;
+		color: white;
+		padding: 8px;
+
+	}*/
+	}
+</style>
+<body class="body">
+	<div class="header">
+		<h1>Website</h1>
+		<p>This is basic webpage</p>
+	</div>
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#">Contact</a>
+		<a href="#">About us</a>
+	</div>
+	<div class="partition">
+		<div class="p1">
+			<h2>Part 1</h2>
+			<p>Know your status.....</p>
+		</div>
+		<div class="p2">
+			<h2>Part 2</h2>
+			<p>Your Profile.....</p>
+			<div class="img">
+				<img src="/home/dell4/HTML/Home.jpg" width="200" height="190" alt="Home">
+				<a href="#">Home</a>
+			</div>
+		</div>
+	</div>
+	<div class="partition">
+		<div class="p1"> 
+			<h2> Part 3</h2>
+			<p>This is Part 3.....</p>
+		</div>
+		<div class="p2">
+				<h2>Part 4</h2>
+		</div>
+	</div>
+</body>
+</html>

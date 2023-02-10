@@ -1,0 +1,103 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<style>
+		.body
+		{
+			font-family:fantasy, sans-serif;
+			background-color: lightskyblue;
+		}
+		.header
+		{
+			padding: 30px;
+			text-align: center;
+			background-color: palevioletred;
+		}
+		.header h1
+		{
+
+			margin: 1px;
+		}
+		.navbar
+		{
+			overflow: hidden;
+			background-color: lightgray;
+			
+		}
+		.navbar a
+		{
+			display: block;
+			float: left;
+			background-color: darkgray;
+			text-align: center;
+  			padding: 15px 30px;
+  			text-decoration: none;
+		}
+		.navbar a:hover
+		{
+			background-color: blanchedalmond;
+			color: red;
+		}
+		.navbar a.right
+		{
+			float: right;
+		}
+		.discription
+		{
+			display: flex;
+			flex-wrap: nowrap;
+			
+		}
+		.img
+		{
+			border: 10px solid black;
+
+			padding: 2px;
+		}
+		.part1
+		{
+			flex: 35%;
+			background-color: dimgrey;
+			padding: 25px;
+		}
+		.part2
+		{
+			flex: 65%;
+			background-color: lightslategray;
+			padding: 25px;
+		}
+		
+	</style>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			My Webpage
+		</title>
+	</head>
+	
+	<body>
+		<div class="header">
+		<h1>Webpage</h1>
+		<p align="center"> This is Webpage</p>
+		</div>
+		<div class="navbar">
+			<a href="#">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="#" class="right">Link</a>
+		</div><br>
+		<div class="discription">
+			<div class="part1">
+				<h2>Part 1</h2>
+				<p>.....................</p>
+				<div class="img">
+					<img src="/home/dell4/HTML/Home.jpg" align="center" width="600" alt="Image">
+				</div>
+			</div>
+			<div class="part2">
+				<h2>Part 2</h2>
+				<p>This is Part 2...............</p>
+			</div>
+		</div>
+	</body>
+	</html>

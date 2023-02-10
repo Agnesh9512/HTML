@@ -1,0 +1,88 @@
+
+   <!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Forms</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body bgcolor="lightgray">
+		<form>
+			<fieldset>
+			<label for="fname">First Name :</label>
+			<input type="text" name="fname" id="fname" size="20" required>
+			<br><br>
+			<label for="lname">Last Name :</label>
+			<input type="text" name="lname" id="lname" size="25">
+			<br><br>
+			<label for="email">Email :</label>
+			<input type="email" name="email" id="email" autocomplete="on" required>
+			<br><br>
+			<label for="pass">Password :</label>
+			<input type="text" name="pass" id="pass" size="6" pattern="[0-9]" required>
+			<input type="button" value="submit" title="Submit">
+			<br><br>
+			<label for="Cars">Cars</label>
+			<br>
+			<select id="Cars" name="Cars">
+				<option>Tata</option>
+				<option>Mahindra</option>
+				<option>Kia</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<p>Choose your favourite Language</p>
+			<br>
+			<input type="radio" name="favlang" id="HTML" value="HTML">
+			<label for="HTML">HTML</label><br>
+			<input type="radio" name="favlang" id="CSS" value="CSS">
+			<label for="CSS">CSS</label><br>
+			<input type="radio" name="favlang" id="JavaScript" value="JavaScript">
+			<label for="JavaScript">JavaScript</label><br><br>
+			<input type="button" name="Submit"  value="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Selete your favourite Fruit</p>
+			<input list="Fruits">
+			<datalist id="Fruits">
+				<option value="Apple"></option>
+				<option value="Mango"></option>
+				<option value="Orange"></option>
+				<label for="Submit">Submit</label>
+				<input type="button" name="Submit" value="Submit">
+			</datalist>
+				<input type="button" name="Submit" value="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Choose your favourite Players</p>
+			<input type="checkbox" name="favplayer" id="Virat" value="Virat">
+			<label for="Virat">Virat</label><br>
+			<input type="checkbox" name="favplayer" id="Rohit" value="Rohit">
+			<label for="Rohit">Rohit</label><br>
+			<input type="checkbox" name="favplayer" id="Dhoni" value="Dhoni">
+			<label for="Dhoni">Dhoni</label><br><br>
+			<input type="button" name="Submit" id="Submit" value="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Press the Button</p>
+			<input type="image" src="/home/dell4/HTML/img_submit.gif" width="50" height="50" onclick="alert('Submitted')" name="submitted" id="submitted" alt="Submit">
+		</fieldset>
+		<fieldset>
+			<p>Enter your date of Birth</p>
+			<label for="dob">DOB : </label>
+			<input type="date" name="dob" id="dob" min="2000-01-01" max="2023-01-01">
+		</fieldset>
+		<fieldset>
+			<p>Example of quantity in numbers</p>
+			<label for="quantity">Quantity between 1 to 10</label>
+			<input type="number" name="quantity" id="quantity" min="1" max="10">
+		</fieldset>
+		<fieldset>
+			<p>Example of iframe tag</p><br>
+			<div align="center"><iframe width="420" height="345" src="https://www.youtube.com/embed/1uBBT1mdaZE" style="text-align: center;">
+</iframe>
+			</div>
+		</fieldset>
+		</form>
+	</body>
+	</html>
